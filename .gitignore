@@ -1,0 +1,8 @@
+node_modules/
+*.tsbuildinfo
+*.js.map
+.DS_Store
+Thumbs.db
+
+# 本地计划书：含本机绝对路径与本地 profile 细节，不入库（设计与验证结论已并入 README）
+PLAN.md

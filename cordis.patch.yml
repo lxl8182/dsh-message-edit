@@ -1,0 +1,4 @@
+# dsh-message-edit bundle 层：插入宿主插件行（提供 prepare / rewrite 两个路由）。
+- insert:
+    - id: dsh-message-edit
+      name: dsh-message-edit

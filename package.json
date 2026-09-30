@@ -1,0 +1,48 @@
+{
+  "name": "dsh-message-edit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "DSH Web 用户消息编辑重发：把某一轮提问改掉重发，该轮及其之后的内容丢弃（原会话归档，新会话继承逐字节相同的前缀）。",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lxl8182/dsh-message-edit.git"
+  },
+  "homepage": "https://github.com/lxl8182/dsh-message-edit#readme",
+  "bugs": {
+    "url": "https://github.com/lxl8182/dsh-message-edit/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-web-react"
+      ]
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
